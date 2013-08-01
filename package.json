@@ -1,0 +1,22 @@
+{
+	"name":"calendar-lib",
+	"author":"jwater <kjs8469@gmail.com>",
+	"version":"0.1.0",
+	"keywords":[
+		"calendar"
+	],
+	"repository":{
+		"type":"git",
+		"url":"git://github.com/kjs8469/calendar.git"
+	},
+	"engines":{
+		"node":">= 0.8.0"
+	},
+	"devDependencies":{
+		"mocha":"1.x",
+		"should":"~0.6"
+	},
+	"scripts":{
+		"test":"make test"
+	}
+}
