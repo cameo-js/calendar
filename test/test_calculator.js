@@ -3,7 +3,7 @@ var Calculator = require('../lib/calculator.js').Calculator
 	,calculator = null;
 
 
-describe("Special day calculator", function(){
+describe("Memorial day calculator", function(){
 	before(function(){
 		calculator = new Calculator("2013","7","29");
 	});
