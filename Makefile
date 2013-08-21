@@ -2,7 +2,7 @@
 REPORTER = spec
 TIMEOUT = 10s
 
-test: test-lunar test-calculator test-period
+test: test-lunar test-calculator test-period test-discharge
 
 test-lunar:
 	@./node_modules/.bin/mocha \
@@ -24,6 +24,14 @@ test-period:
 		--reporter $(REPORTER) \
 		--timeout $(TIMEOUT) \
 		test/test_period.js
+
+test-discharge:
+	@./node_modules/.bin/mocha \
+		--require should \
+		--reporter $(REPORTER) \
+		--timeout $(TIMEOUT) \
+		test/test_discharge.js
+
 
 .PHONY: test
 
