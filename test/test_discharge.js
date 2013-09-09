@@ -231,12 +231,12 @@ describe("Discharge Calculator", function(){
 		discharge.remainDay.should.equal(0);
 
 		discharge.init("army","20120202");
-		discharge.goneDay.should.equal(566);
-		discharge.remainDay.should.equal(72);
+		discharge.goneDay.should.equal(568);
+		discharge.remainDay.should.equal(70);
 
 		discharge.init("army","20130202");
-		discharge.goneDay.should.equal(200);
-		discharge.remainDay.should.equal(437);
+		discharge.goneDay.should.equal(202);
+		discharge.remainDay.should.equal(435);
 
 		discharge.init("army","20130909");
 		discharge.goneDay.should.equal(0);
@@ -274,28 +274,26 @@ describe("Discharge Calculator", function(){
 	});
 
 	it("check other info (promotion)",function(){
-		console.log("=====");
-	
 		discharge.init("army","20130803");
-		discharge.promotionDay.should.equal(72);
+		discharge.promotionDay.should.equal(70);
 
 		discharge.init("army","20130703");
-		discharge.promotionDay.should.equal(41);
+		discharge.promotionDay.should.equal(39);
 
 		discharge.init("army","20130603");
-		discharge.promotionDay.should.equal(11);
+		discharge.promotionDay.should.equal(9);
 
 		discharge.init("army","20130523");
-		discharge.promotionDay.should.equal(192);
+		discharge.promotionDay.should.equal(190);
 
 		discharge.init("army","20121123");
-		discharge.promotionDay.should.equal(11);
+		discharge.promotionDay.should.equal(9);
 
 		discharge.init("army","20121023");
-		discharge.promotionDay.should.equal(192);
+		discharge.promotionDay.should.equal(190);
 
 		discharge.init("army","20120423");
-		discharge.promotionDay.should.equal(11);
+		discharge.promotionDay.should.equal(9);
 
 		discharge.init("army","20120323");
 		discharge.promotionDay.should.equal(0);
