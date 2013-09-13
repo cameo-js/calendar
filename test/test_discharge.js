@@ -217,6 +217,9 @@ describe("Discharge Calculator", function(){
 
 	});
 
+/*
+ * 남은 일수나 계급은 바뀌기때문에 주석처리
+ *
 	it("check other info (service ratio)",function(){
 		discharge.init("army","20060103");
 		discharge.goneDay.should.equal(728);
@@ -302,6 +305,6 @@ describe("Discharge Calculator", function(){
 		discharge.promotionDay.should.equal(0);
 	
 	});
-
+*/
 });
 
