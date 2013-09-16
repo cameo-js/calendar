@@ -29,12 +29,19 @@ describe("Memorial day calculator", function(){
 		calculator.getDate().getMonth().should.equal(7);
 		calculator.getDate().getDate().should.equal(1);
 		
-		calculator.getTermsBetweenTwoDate("20130810").should.equal(9);
+		calculator.getTermsBetweenTwoDate("20130810").should.equal(10);
+
+		calculator.setDate("2013","8","6");
+		calculator.getTermsBetweenTwoDate("20130805").should.equal(-1);
+		calculator.getTermsBetweenTwoDate("20130807").should.equal(2);
 	});
 
 	it("get Date By terms test",function(){
 		calculator.setDate("2014","2","14");
-		calculator.getDateByTerms(10).getDate().should.equal(24);
+		calculator.getDateByTerms(10).getDate().should.equal(23);
+		calculator.getDateByTerms(1).getDate().should.equal(14);
+		calculator.getDateByTerms(2).getDate().should.equal(15);
+		calculator.getDateByTerms(-1).getDate().should.equal(13);
 	});
 	it("get Date By Dday test",function(){
 		calculator.setDate("2013","5","20");
